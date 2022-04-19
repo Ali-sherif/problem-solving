@@ -1,0 +1,29 @@
+/*
+Runtime: 1 ms, faster than 85.80% of Java online submissions for Remove Duplicates from Sorted Array.
+Memory Usage: 43.9 MB, less than 89.65% of Java online submissions for Remove Duplicates from Sorted Array
+*/
+
+public class Mavenproject2 {
+    
+public static int removeDuplicates(int[] nums){
+    int count =1;
+    if (nums.length == 1)
+      return 1;
+    for(int i=0,j=1;j<=nums.length-1;j++){      
+      
+      if(nums[i]!=nums[j]) {
+       nums[i+1]=nums[j];
+       i++;
+       count++;
+      }      
+    }
+    return count;
+}
+    public static void main(String[] args) {
+    
+    int [] x ={0,0,1,1,1,2,2,3,3,4]};
+    int result = removeDuplicates(x);
+        System.out.println("\n"+result);
+    }
+}
+
