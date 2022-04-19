@@ -12,7 +12,6 @@ class Solution {
         for (int i = 0, j = 0; i < haystack.length(); i++) {
             if (haystack.charAt(i) == needle.charAt(j)) {
                 s+=haystack.charAt(i);
-                System.out.println(s+" ya rays");
                 if (index == -1 ) {
                     index = i;
                 } else {
