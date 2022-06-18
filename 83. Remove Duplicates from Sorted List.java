@@ -28,7 +28,7 @@ class Solution {
         ListNode pn = head;
 
         while (pn.next != null) {
-            if (pn == pn.next.val) {
+            if (pn.val == pn.next.val) {
                 pn.next = pn.next.next;
             } else {
                 pn = pn.next;
